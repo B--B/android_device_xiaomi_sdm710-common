@@ -100,6 +100,24 @@ user: AID_GPS
 group: AID_GPS
 caps: NET_BIND_SERVICE WAKE_ALARM BLOCK_SUSPEND
 
+[vendor/bin/glgps]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
+[vendor/bin/ignss_2_0]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
+[vendor/bin/lhd]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
 [vendor/firmware_mnt/image/*]
 mode: 0771
 user: AID_SYSTEM
