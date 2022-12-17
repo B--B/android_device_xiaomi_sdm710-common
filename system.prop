@@ -15,6 +15,9 @@ camera.disable_zsl_mode=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
+
 # Display
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
