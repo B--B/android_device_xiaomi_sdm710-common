@@ -203,7 +203,7 @@ vendor/lib64/libdpmqmihal.so
 # DRM (QSEECom)
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
+vendor/etc/init/qseecomd.rc|98692ff034eef62c7bcb1b02e9deb48070a5ab90
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
