@@ -346,7 +346,7 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor
 
 # Release Keys
-PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/bb-priv/keys/releasekey
 
 # RIL
 PRODUCT_PACKAGES += \
