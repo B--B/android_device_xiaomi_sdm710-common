@@ -191,6 +191,8 @@ persist.log.tag.GoogleTagManager=S
 # Media
 debug.stagefright.omx_default_rank=0
 debug.stagefright.omx_default_rank.sw-audio=16
+vendor.media.target.version=1
+vendor.sys.media.target.version=1
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
