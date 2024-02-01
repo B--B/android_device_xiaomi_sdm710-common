@@ -165,12 +165,6 @@ function configure_memory_parameters() {
 # to one of the CPU from the default IRQ affinity mask.
 echo 3f > /proc/irq/default_smp_affinity
 
-if [ -f /sys/devices/soc0/hw_platform ]; then
-    hw_platform=`cat /sys/devices/soc0/hw_platform`
-else
-    hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
-fi
-
 # Core control parameters on silver
 echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
 echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
