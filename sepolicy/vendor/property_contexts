@@ -10,16 +10,16 @@ persist.audio.fluence.voicerec                  u:object_r:vendor_audio_prop:s0
 ro.qc.sdk.audio.fluencetype                     u:object_r:vendor_audio_prop:s0
 
 # Camera
-camera.                                         u:object_r:camera_prop:s0
-persist.camera.                                 u:object_r:camera_prop:s0
-persist.debug.sf.showfps                        u:object_r:camera_prop:s0
-persist.vendor.camera                           u:object_r:camera_prop:s0
-ro.camera.res.fmq.size                          u:object_r:camera_prop:s0
-ro.camera.req.fmq.size                          u:object_r:camera_prop:s0
-ro.vendor.camera.                               u:object_r:camera_prop:s0
-vendor.camera.boot_complete                     u:object_r:camera_prop:s0
-vendor.camera.sensor.                           u:object_r:camera_prop:s0
-vidhance.                                       u:object_r:camera_prop:s0
+camera.                                         u:object_r:vendor_camera_prop:s0
+persist.camera.                                 u:object_r:vendor_camera_prop:s0
+persist.debug.sf.showfps                        u:object_r:vendor_camera_prop:s0
+persist.vendor.camera                           u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size                          u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size                          u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.                           u:object_r:vendor_camera_prop:s0
+vidhance.                                       u:object_r:vendor_camera_prop:s0
 
 # Display
 gpu.stats.debug.level                           u:object_r:vendor_display_prop:s0
@@ -60,11 +60,11 @@ zeroth.debuglog.logmask                         u:object_r:vendor_default_prop:s
 vendor.powerhal.                                u:object_r:vendor_power_prop:s0
 
 # Sensors
-persist.sensor.                                 u:object_r:sensors_prop:s0
-invn.hal.data.                                  u:object_r:sensors_prop:s0
-invn.hal.debug.                                 u:object_r:sensors_prop:s0
-invn.hal.entry.                                 u:object_r:sensors_prop:s0
-invn.hal.verbose.                               u:object_r:sensors_prop:s0
+persist.sensor.                                 u:object_r:vendor_sensors_prop:s0
+invn.hal.data.                                  u:object_r:vendor_sensors_prop:s0
+invn.hal.debug.                                 u:object_r:vendor_sensors_prop:s0
+invn.hal.entry.                                 u:object_r:vendor_sensors_prop:s0
+invn.hal.verbose.                               u:object_r:vendor_sensors_prop:s0
 
 # Thermal
 persist.sys.thermal.                            u:object_r:vendor_thermal_normal_prop:s0
