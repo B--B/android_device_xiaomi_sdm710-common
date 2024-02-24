@@ -115,7 +115,7 @@
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "50",
-        "10",
+        "1",
         "0"
       ],
       "DefaultIndex": 1,
