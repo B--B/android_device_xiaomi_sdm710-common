@@ -1,6 +1,7 @@
 # Display
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state          u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                      u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc- u:object_r:sysfs_sde_crtc:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare        u:object_r:sysfs_fingerprint:s0
