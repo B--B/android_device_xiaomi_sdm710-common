@@ -123,7 +123,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUIGoogle
 
 # Display
 PRODUCT_PACKAGES += \
