@@ -52,9 +52,6 @@ genfscon proc /tp_fw_version                          u:object_r:proc_tp:s0
 genfscon proc /tp_lockdown_info                       u:object_r:proc_tp:s0
 genfscon sysfs /touchpanel                            u:object_r:sysfs_touchpanel:s0
 
-# Battery stats
-genfscon proc /wakelocks                              u:object_r:proc_wakelocks:s0
-
 # WakeUp Nodes
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup u:object_r:sysfs_wakeup:s0
