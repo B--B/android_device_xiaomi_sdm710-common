@@ -25,13 +25,18 @@ function blob_fixup() {
     case "${1}" in
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
-            ;;
-	vendor/bin/pm-service)
-	    grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
-	    ;;
+        ;;
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+        ;;
         vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
             echo 'madvise: 1' >> ${2}
-            ;;
+        ;;
+        vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefright_soft_ac4dec.so | \
+        vendor/lib/libstagefrightdolby.so | vendor/lib64/libstagefright_soft_ddpdec.so | \
+        vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
+            ${PATCHELF} --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+        ;;
     esac
 }
 

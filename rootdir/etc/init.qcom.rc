@@ -389,6 +389,10 @@ on property:ro.vendor.iocgrp.config=1
 on property:persist.vendor.ssr.restart_level=*
     start vendor.ssr_setup
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #WDSP FW boot sysfs node used by STHAL
