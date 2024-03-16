@@ -76,11 +76,6 @@ vendor.audio.voice.receiver.status=off
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.period_size=192
 
-# Audio (Dolby)
-persist.vendor.audio_fx.current=dolby
-ro.vendor.audio.dolby.dax.support=true
-ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
-
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.operating_voltage_mv=3300
@@ -163,7 +158,6 @@ persist.log.tag.GoogleTagManager=S
 
 # Media
 debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=16
 vendor.media.target.version=1
 vendor.sys.media.target.version=1
 

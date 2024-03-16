@@ -5,6 +5,3 @@ vendor_internal_prop(vendor_thermal_normal_prop)
 vendor_public_prop(vendor_camera_prop)
 vendor_public_prop(vendor_sensors_prop)
 vendor_public_prop(vendor_fp_prop)
-
-# Dolby
-vendor_internal_prop(vendor_dolby_loglevel_prop);
